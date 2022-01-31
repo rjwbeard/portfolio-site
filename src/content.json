@@ -1,11 +1,20 @@
 {
   "App": {
-    "portfolioButton": "Portfolio",
-    "experienceButton": "Experience",
-    "contactButton": "Contact"
+    "portfolioButton": {
+      "text": "Portfolio",
+      "subtext": "Via GitHub"
+    },
+    "experienceButton": {
+      "text": "Experience",
+      "subtext": "Via LinkedIn"
+    },
+    "contactButton": {
+      "text": "Contact",
+      "subtext": "Questions? Collaborations?"
+    }
   },
   "AboutMe": {
     "aboutMeHeader": "Hey, I'm Rebecca.",
-    "aboutMeBody": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+    "aboutMeBody": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum orem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
   }
 }

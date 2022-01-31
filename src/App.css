@@ -1,30 +1,47 @@
 .App {
   display: flex;
   flex-direction: row;
-  height: 96vh;
-  width: 96vw;
-  margin: 1em;
   font-family: "Chakra Petch", sans-serif;
+  height: 96vh;
+  margin: 2vh;
 }
 
-.right-column {
-  width: 30%;
-  height: 100%;
+@media only screen and (max-width: 660px) {
+  .App {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    height: inherit;
+  }
+}
+
+.AboutMe {
+  background-color: #ddddc7;
+  display: flex;
+  flex-direction: column;
+  font-size: 3em;
+  font-weight: 600px;
+  text-align: left;
+  padding: 1em;
+}
+
+.Links {
   background-color: #552e5a;
-  justify-content: space-around;
-  border-radius: 0.2em;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em;
 }
 
 .app-link {
+  text-align: right;
+  transition: 0.4 ease-out;
   background-color: transparent;
-  outline: none;
-  border: none;
   color: #ecffa3;
   font-size: 2.3em;
   font-weight: 600;
-  float: right;
   font-family: "DotGothic16", sans-serif;
   letter-spacing: 0.3em;
+  margin: 0.5em 0 0.5em 0;
+  text-decoration: none;
 }
 
 .app-link:hover {
@@ -32,17 +49,22 @@
   color: #f6e198;
 }
 
-.left-column {
-  width: 70%;
-  background-color: #ddddc7;
-  border-radius: 0.3em;
+#portfolio-link:hover {
+  transform: rotate(-10deg);
 }
 
-.about-me {
-  font-size: 4em;
-  font-weight: 600px;
-  text-align: left;
-  float: left;
+#experience-link:hover {
+  transform: rotate(10deg);
+}
+
+#contact-link:hover {
+  transform: rotate(-10deg);
+}
+
+.app-link-subtext {
+  text-align: right;
+  color: #f6e198;
+  font-family: "DotGothic16", sans-serif;
 }
 
 .about-me-header {

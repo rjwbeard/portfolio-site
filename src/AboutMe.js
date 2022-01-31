@@ -2,7 +2,7 @@ import Content from "./content.json";
 
 const AboutMe = () => {
   return (
-    <div className="about-me">
+    <div className="AboutMe">
       <header className="about-me-header">
         {Content.AboutMe.aboutMeHeader}
       </header>
