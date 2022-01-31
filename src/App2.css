@@ -1,0 +1,56 @@
+.App {
+  display: flex;
+  flex-direction: row;
+  height: 96vh;
+  width: 96vw;
+  margin: 1em;
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.right-column {
+  width: 30%;
+  height: 100%;
+  background-color: #552e5a;
+  justify-content: space-around;
+  border-radius: 0.2em;
+}
+
+.app-link {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #ecffa3;
+  font-size: 2.3em;
+  font-weight: 600;
+  float: right;
+  font-family: "DotGothic16", sans-serif;
+  letter-spacing: 0.3em;
+}
+
+.app-link:hover {
+  cursor: pointer;
+  color: #f6e198;
+}
+
+.left-column {
+  width: 70%;
+  background-color: #ddddc7;
+  border-radius: 0.3em;
+}
+
+.about-me {
+  font-size: 4em;
+  font-weight: 600px;
+  text-align: left;
+  float: left;
+}
+
+.about-me-header {
+  color: #dc7646;
+  font-family: "DotGothic16", sans-serif;
+  letter-spacing: 0.1em;
+}
+
+.about-me-body {
+  font-size: 0.5em;
+}

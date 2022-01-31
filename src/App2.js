@@ -1,25 +1,25 @@
-// import "./App.css";
+import "./App2.css";
 import AboutMe from "./AboutMe";
 
-function App() {
+function App2() {
   return (
     <div className="App">
-      <div className="app-links-div" id="header">
+      <div className="left-column">
+        <AboutMe />
+      </div>
+      <div className="right-column">
         <button className="app-link" id="portfolio-link">
           Portfolio
         </button>
         <button className="app-link" id="experience-link">
           Experience
         </button>
-      </div>
-      <div className="app-about-me">
-        <AboutMe />
-      </div>
-      <div className="app-links-div" id="footer">
-        <button className="app-link">Contact</button>
+        <button className="app-link" id="contact-link">
+          Contact
+        </button>
       </div>
     </div>
   );
 }
 
-export default App;
+export default App2;

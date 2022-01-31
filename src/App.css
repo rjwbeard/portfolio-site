@@ -5,54 +5,64 @@
   left: 0;
   height: 100%;
   width: 100%;
+  min-width: 500px;
+  background-image: url("./flyingcars.png");
+  background-size: cover;
+  background-position: center;
 }
 
-.app-header-links {
-  height: 3em;
+.app-links-div {
   width: 100%;
-  background-color: antiquewhite;
   position: fixed;
+  text-align: center;
 }
 
-.app-portfolio-link {
-  background-color: #777;
+.app-link {
   justify-content: center;
+  text-align: center;
+  margin-top: 1em;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.app-link:hover {
+  cursor: pointer;
+}
+
+#portfolio-link {
   float: left;
-  margin-top: 1em;
+  margin: 0.5em 0 0 1em;
 }
 
-.app-experience-link {
-  background-color: #636;
-  justify-content: center;
-  margin-top: 1em;
+#experience-link {
   float: right;
+  margin: 0.5em 1em 0 0;
 }
 
 .app-about-me {
-  background-color: thistle;
   display: table-cell;
   vertical-align: middle;
 }
 
 .about-me {
+  background-color: black;
+  color: white;
+  font-size: 4em;
+  font-weight: 600px;
   margin-left: auto;
   margin-right: auto;
   width: 400px;
+  height: 100px;
   justify-content: center;
   text-align: center;
 }
 
-.app-footer-links {
-  height: 7%;
-  width: 100%;
-  position: fixed;
-  text-align: center;
+#footer {
   left: 0;
   bottom: 0;
-  background-color: #366;
-}
-
-.app-contact-link {
-  justify-content: center;
-  margin-top: 1.5em;
+  margin: 0 0 1em 0;
 }
