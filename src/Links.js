@@ -17,7 +17,7 @@ const Links = () => {
       >
         {Content.App.experienceButton.text}
       </a>
-      <a className="app-link" id="contact-link">
+      <a className="app-link" href="/" id="contact-link">
         {Content.App.contactButton.text}
       </a>
     </div>
