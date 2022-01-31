@@ -1,4 +1,5 @@
 import "./App2.css";
+import Content from "./content.json";
 import AboutMe from "./AboutMe";
 
 function App2() {
@@ -9,13 +10,13 @@ function App2() {
       </div>
       <div className="right-column">
         <button className="app-link" id="portfolio-link">
-          Portfolio
+          {Content.App.portfolioButton}
         </button>
         <button className="app-link" id="experience-link">
-          Experience
+          {Content.App.experienceButton}
         </button>
         <button className="app-link" id="contact-link">
-          Contact
+          {Content.App.contactButton}
         </button>
       </div>
     </div>

@@ -1,0 +1,11 @@
+{
+  "App": {
+    "portfolioButton": "Portfolio",
+    "experienceButton": "Experience",
+    "contactButton": "Contact"
+  },
+  "AboutMe": {
+    "aboutMeHeader": "Hey, I'm Rebecca.",
+    "aboutMeBody": "lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+  }
+}
