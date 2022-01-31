@@ -1,4 +1,4 @@
-import "./App2.css";
+import "./App.css";
 import Content from "./content.json";
 import AboutMe from "./AboutMe";
 
