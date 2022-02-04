@@ -6,7 +6,7 @@
   margin: 2vh;
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 800px) {
   .App {
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -21,7 +21,7 @@
   font-size: 3em;
   font-weight: 600px;
   text-align: left;
-  padding: 1em;
+  padding: 5em 1em 1em 1em;
 }
 
 .Links {
@@ -33,14 +33,14 @@
 
 .app-link {
   text-align: right;
-  transition: 0.4 ease-out;
+  transition: 0.1 ease-in-out;
   background-color: transparent;
   color: #ecffa3;
   font-size: 2.3em;
   font-weight: 600;
   font-family: "DotGothic16", sans-serif;
   letter-spacing: 0.3em;
-  margin: 0.5em 0 0.5em 0;
+  margin: 0.7em 0 0.7em 0;
   text-decoration: none;
 }
 
@@ -50,29 +50,46 @@
 }
 
 #portfolio-link:hover {
-  transform: rotate(-10deg);
+  transform: rotate(7deg);
+  -moz-transform: rotateZ(7deg);
+  -webkit-transform: rotateZ(7deg);
+  -o-transform: rotateZ(7deg);
 }
 
 #experience-link:hover {
-  transform: rotate(10deg);
+  transform: rotate(-7deg);
+  -moz-transform: rotateZ(-7deg);
+  -webkit-transform: rotateZ(-7deg);
+  -o-transform: rotateZ(-7deg);
 }
 
 #contact-link:hover {
-  transform: rotate(-10deg);
+  transform: rotate(7deg);
+  -moz-transform: rotateZ(7deg);
+  -webkit-transform: rotateZ(7deg);
+  -o-transform: rotateZ(7deg);
 }
 
-.app-link-subtext {
-  text-align: right;
-  color: #f6e198;
-  font-family: "DotGothic16", sans-serif;
+#twitter-link:hover {
+  transform: rotate(-7deg);
+  -moz-transform: rotateZ(-7deg);
+  -webkit-transform: rotateZ(-7deg);
+  -o-transform: rotateZ(-7deg);
+}
+
+#twitter-icon {
+  height: 0.6em;
+  width: 0.6em;
 }
 
 .about-me-header {
   color: #dc7646;
   font-family: "DotGothic16", sans-serif;
   letter-spacing: 0.1em;
+  margin: 0 0 0.3em 0;
 }
 
 .about-me-body {
   font-size: 0.5em;
+  line-height: 1.7;
 }
