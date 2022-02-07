@@ -1,5 +1,6 @@
 import Content from "./content.json";
 import TWITTER from "./images/TWITTER.png";
+import Modal from "./Modal";
 
 const Links = () => {
   return (
@@ -22,15 +23,7 @@ const Links = () => {
       >
         {Content.App.experienceButton.text}
       </a>
-      <a
-        className="app-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        href="/"
-        id="contact-link"
-      >
-        {Content.App.contactButton.text}
-      </a>
+      <Modal />
       <a
         href="https://twitter.com/mythsabouthell?ref_src=twsrc%5Etfw"
         className="app-link"
