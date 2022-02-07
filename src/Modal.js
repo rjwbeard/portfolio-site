@@ -21,9 +21,6 @@ const Modal = () => {
     <Popup modal trigger={renderContactButton()}>
       {(close) => (
         <div className="Modal">
-          <button className="modal-close" onClick={close}>
-            &times;
-          </button>
           <div className="modal-header"> Let's talk about tech, baby. </div>
           <div className="modal-content">
             <Contact />
