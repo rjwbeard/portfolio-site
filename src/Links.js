@@ -6,7 +6,7 @@ const Links = () => {
   return (
     <div className="Links">
       <a
-        className="app-link"
+        className="Links_link"
         id="portfolio-link"
         target="_blank"
         rel="noopener noreferrer"
@@ -15,7 +15,7 @@ const Links = () => {
         {Content.App.portfolioButton.text}
       </a>
       <a
-        className="app-link"
+        className="Links_link"
         id="experience-link"
         target="_blank"
         rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const Links = () => {
       <Modal />
       <a
         href="https://twitter.com/mythsabouthell?ref_src=twsrc%5Etfw"
-        className="app-link"
+        className="Links_link"
         data-show-count="false"
         target="_blank"
         rel="noopener noreferrer"

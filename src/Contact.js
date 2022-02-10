@@ -19,37 +19,39 @@ export const Contact = () => {
           console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          console.error(error.text);
         }
       );
   };
 
   return (
     <div className="Contact">
-      <form className="contact-form" ref={form} onSubmit={sendEmail}>
-        <div className="contact-info">
-          <label className="contact-label">Your Name</label>
+      <form className="Contact_form" ref={form} onSubmit={sendEmail}>
+        <div className="Contact_section">
+          <label className="Contact_label">Your Name</label>
           <input
-            className="contact-input"
+            className="Contact_input"
             type="text"
             name="user_name"
             autoComplete="off"
+            required
           />
         </div>
-        <div className="contact-info">
-          <label className="contact-label">Your Email</label>
+        <div className="Contact_section">
+          <label className="Contact_label">Your Email</label>
           <input
-            className="contact-input"
+            className="Contact_input"
             type="email"
             name="user_email"
             autoComplete="off"
+            required
           />
         </div>
-        <div className="contact-message">
-          <label className="contact-label">The Message</label>
-          <textarea className="contact-message-textarea" name="message" />
+        <div className="Contact_section">
+          <label className="Contact_label">The Message</label>
+          <textarea required className="Contact_textarea" name="message" />
         </div>
-        <input className="contact-submit-button" type="submit" value="Send" />
+        <input className="Contact_submit_button" type="submit" value="Send" />
       </form>
     </div>
   );

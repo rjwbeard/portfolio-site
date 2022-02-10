@@ -9,8 +9,8 @@
 @media only screen and (max-width: 800px) {
   .App {
     flex-direction: column-reverse;
-    justify-content: space-between;
     height: inherit;
+    justify-content: space-between;
   }
 }
 
@@ -25,6 +25,18 @@
   padding: 5em 1em 1em 1em;
 }
 
+.AboutMe_header {
+  color: #dc7646;
+  font-family: "DotGothic16", sans-serif;
+  letter-spacing: 0.1em;
+  margin: 0 0 0.3em 0;
+}
+
+.AboutMe_body {
+  font-size: 0.5em;
+  /* line-height: 1.7; */
+}
+
 .Links {
   background-color: #552e5a;
   display: flex;
@@ -32,24 +44,24 @@
   padding: 1.5em;
 }
 
-.app-link {
-  text-align: right;
-  transition: 0.1 ease-in-out;
+.Links_link {
   background-color: transparent;
-  outline: none;
   border: none;
   color: #ecffa3;
+  font-family: "DotGothic16", sans-serif;
   font-size: 2.3em;
   font-weight: 600;
-  font-family: "DotGothic16", sans-serif;
   letter-spacing: 0.3em;
   margin: 0.7em 0 0.7em 0;
+  outline: none;
+  text-align: right;
   text-decoration: none;
+  transition: 0.1 ease-in-out;
 }
 
-.app-link:hover {
+.Links_link:hover {
+  color: #d1d258;
   cursor: pointer;
-  color: #f6e198;
 }
 
 #portfolio-link:hover {
@@ -85,128 +97,143 @@
   width: 0.6em;
 }
 
-.about-me-header {
-  color: #dc7646;
-  font-family: "DotGothic16", sans-serif;
-  letter-spacing: 0.1em;
-  margin: 0 0 0.3em 0;
-}
-
-.about-me-body {
-  font-size: 0.5em;
-  line-height: 1.7;
-}
-
 .Modal {
+  background-color: #dc7646;
+  color: #552e5a;
+  display: flex;
+  flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
   font-size: 1.2em;
-  height: 25em;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-self: center;
-  color: #552e5a;
-  background-color: #dc7646;
-  min-width: fit-content;
 }
 
-.modal-header {
-  width: 100%;
+.Modal_close {
+  background-color: transparent;
+  border: none;
+  color: #ddddc7;
+  overflow: hidden;
+  white-space: nowrwap;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 4em;
+  position: absolute;
+  right: -0.2em;
+  top: -0.8em;
+  transition: 0.2 ease-in-out;
+}
+
+.Modal_close:hover {
+  cursor: pointer;
+  transform: rotate(13deg);
+}
+
+.Modal_header {
   font-size: 1.7em;
   justify-content: center;
+  margin: 0.7em;
   text-align: center;
-  margin: 0.5em;
-  padding: 0;
+  width: inherit;
 }
 
 #popup-2 {
+  border: none;
   padding: 0;
-  border: none;
 }
 
-.modal-content {
+.Modal_content {
+  justify-content: center;
   width: 100%;
+}
+
+.Contact {
+  display: flex;
   justify-content: center;
 }
 
-.contact-form {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+.Contact_form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
-.contact-label {
+.Contact_label {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   width: 70%;
-  margin: 0.1em;
-  text-align: left;
-  margin: 0.3em;
 }
 
-.contact-input {
-  width: 27em;
-  height: 2em;
+.Contact_input {
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.1em;
+  height: 2.5em;
+  margin: 0.5em 0;
+  width: 70%;
 }
 
-.contact-info {
-  justify-content: center;
+.Contact_section {
   display: flex;
   flex-flow: row wrap;
-}
-
-.contact-message {
   justify-content: center;
-  display: flex;
-  flex-flow: row wrap;
 }
 
-.contact-message-textarea {
-  width: 27em;
-  height: 13em;
+.Contact_textarea {
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 1.2em;
+  height: 9em;
+  margin: 0.5em 0;
   resize: none;
+  width: 70%;
 }
 
-.contact-submit-button {
-  align-self: flex-end;
-  margin: 0.5em 8em 0 0;
-  background-color: #ffffff;
-  height: 1.5em;
+.Contact_textarea:focus,
+.Contact_input:focus {
   outline: none;
-  border: none;
-  font-weight: 400;
-  width: 3em;
-  color: #552e5a;
-  font-family: "Chakra Petch", sans-serif;
-  font-size: 1em;
 }
 
-.contact-submit-button:hover {
-  transform: scale(1.15);
+.Contact_submit_button {
+  background-color: transparent;
+  border: none;
+  color: #552e5a;
+  display: flex;
+  font-size: 1.4em;
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 400;
+  justify-content: flex-end;
+  margin: 0.6em;
+  max-width: 100%;
+  outline: none;
+}
+
+.Contact_submit_button:hover {
   cursor: pointer;
   font-style: italic;
 }
 
-@media only screen and (max-width: 500px) {
-  .Modal {
-    justify-content: center;
-    align-content: center;
-    width: min-content;
-    height: fit-content;
-  }
-
-  .contact-input {
+@media only screen and (max-width: 900px) {
+  .Contact_input {
     margin: 0.5em;
-    width: 20em;
     height: 2em;
+    font-size: 0.9em;
+    width: 90%;
   }
 
-  .contact-message-textarea {
-    width: 20em;
-    height: 13em;
+  .Contact_textarea {
+    font-size: 1em;
+    height: 9em;
     margin: 0.5em;
+    width: 90%;
   }
 
-  .contact-submit-button {
-    margin: 0.5em 2em 0.5em 0;
+  .AboutMe {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-height: 550px) {
+  .AboutMe {
+    padding: 1em;
   }
 }

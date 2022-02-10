@@ -7,7 +7,7 @@ const Modal = () => {
   const renderContactButton = () => {
     return (
       <button
-        className="app-link"
+        className="Links_link"
         target="_blank"
         rel="noopener noreferrer"
         id="contact-link"
@@ -21,8 +21,11 @@ const Modal = () => {
     <Popup modal trigger={renderContactButton()}>
       {(close) => (
         <div className="Modal">
-          <div className="modal-header"> Let's talk about tech, baby. </div>
-          <div className="modal-content">
+          <button className="Modal_close" onClick={close}>
+            &times;
+          </button>
+          <div className="Modal_header"> Let's talk about tech, baby. </div>
+          <div className="Modal_content">
             <Contact />
           </div>
         </div>

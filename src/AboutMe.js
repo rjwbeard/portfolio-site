@@ -3,10 +3,10 @@ import Content from "./content.json";
 const AboutMe = () => {
   return (
     <div className="AboutMe">
-      <header className="about-me-header">
+      <header className="AboutMe_header">
         {Content.AboutMe.aboutMeHeader}
       </header>
-      <div className="about-me-body">{Content.AboutMe.aboutMeBody}</div>
+      <div className="AboutMe_body">{Content.AboutMe.aboutMeBody}</div>
     </div>
   );
 };
