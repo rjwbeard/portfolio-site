@@ -137,6 +137,11 @@
   width: inherit;
 }
 
+#popup-1 {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
 #popup-2 {
   border: none;
   padding: 0;
