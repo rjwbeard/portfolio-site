@@ -1,20 +1,17 @@
 {
   "App": {
     "portfolioButton": {
-      "text": "Portfolio",
-      "subtext": "Via GitHub"
+      "text": "Portfolio"
     },
     "experienceButton": {
-      "text": "Experience",
-      "subtext": "Via LinkedIn"
+      "text": "Experience"
     },
     "contactButton": {
-      "text": "Contact",
-      "subtext": "Questions? Collaborations?"
+      "text": "Contact"
     }
   },
   "AboutMe": {
     "aboutMeHeader": "Hey, I'm Rebecca.",
-    "aboutMeBody": "I'm a self-taught web developer working to become a front-end engineer. I'm actively looking for opportunities that will allow me to practice and develop my coding and design skills. I love experimenting with new technologies and connecting with fellow developers. I'm particularly interested in working with local businesses and artists in my community. My skillset includes JavaScript, HTML, CSS and React. I'm always seeking to learn and grow; contact me with any questions, or just to say hello!"
+    "aboutMeBody": "I'm a self-taught web developer working to become a front-end engineer. I'm actively looking for opportunities that will allow me to practice and develop my coding and design skills. I love experimenting with new technologies and connecting with fellow developers. I'm particularly interested in working with local businesses and artists in Philadelphia. My skills includes JavaScript, HTML, CSS, Mocha, and React. I'm always seeking to learn and grow; contact me with any questions, or just to say hello!"
   }
 }
