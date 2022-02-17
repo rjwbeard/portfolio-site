@@ -21,9 +21,11 @@ const Modal = () => {
     <Popup modal trigger={renderContactButton()}>
       {(close) => (
         <div className="Modal">
-          <button className="Modal_close" onClick={close}>
-            &times;
-          </button>
+          <div className="Modal_close">
+            <button className="Modal_close_button" onClick={close}>
+              &times;
+            </button>
+          </div>
           <div className="Modal_header"> Let's talk about tech, baby. </div>
           <div className="Modal_content">
             <Contact />

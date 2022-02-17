@@ -34,7 +34,7 @@
 
 .AboutMe_body {
   font-size: 0.5em;
-  /* line-height: 1.7; */
+  line-height: 1.5;
 }
 
 .Links {
@@ -51,6 +51,7 @@
   font-family: "DotGothic16", sans-serif;
   font-size: 2.3em;
   font-weight: 600;
+  justify-items: center;
   letter-spacing: 0.3em;
   margin: 0.7em 0 0.7em 0;
   outline: none;
@@ -60,9 +61,10 @@
 }
 
 .Links_link:hover {
-  color: #d1d258;
+  color: #c5d86d;
   cursor: pointer;
 }
+/* #c5d86d #9c7d14 #f0bcd4 #9999c3 #dc6acf #ffc4eb */
 
 #portfolio-link:hover {
   transform: rotate(7deg);
@@ -103,32 +105,42 @@
   display: flex;
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
-  font-size: 1.2em;
+  width: 33em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .Modal_close {
-  background-color: transparent;
-  border: none;
-  color: #ddddc7;
-  overflow: hidden;
-  white-space: nowrwap;
-  font-family: "DotGothic16", sans-serif;
-  font-size: 4em;
-  position: absolute;
-  right: -0.2em;
-  top: -0.8em;
+  display: flex;
+  width: 100%;
+  height: min-content;
+  justify-content: flex-end;
   transition: 0.2 ease-in-out;
 }
 
-.Modal_close:hover {
-  cursor: pointer;
-  transform: rotate(13deg);
+.Modal_close_button {
+  background-color: transparent;
+  border: none;
+  color: #ecffa3;
+  font-family: "DotGothic16", sans-serif;
+  font-size: 2.5em;
+  height: min-content;
+  padding: 0 0.5em 0 0;
 }
+
+.Modal_close_button:hover {
+  cursor: pointer;
+  transform: rotate(-17deg);
+}
+
+/* #0A210F #657153 #285238 */
 
 .Modal_header {
   font-size: 1.7em;
   justify-content: center;
-  margin: 0.7em;
+  margin: 0.5em 0 1em 0;
   text-align: center;
   width: inherit;
 }
@@ -145,7 +157,7 @@
 
 .Contact {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .Contact_form {
@@ -157,7 +169,8 @@
 .Contact_label {
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-start;
+  font-size: 1.2em;
+  justify-content: left;
   width: 70%;
 }
 
@@ -166,9 +179,9 @@
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 1.1em;
-  height: 2.5em;
+  height: 2em;
   margin: 0.5em 0;
-  width: 70%;
+  width: 75%;
 }
 
 .Contact_section {
@@ -182,10 +195,10 @@
   border: 2px solid #ccc;
   border-radius: 4px;
   font-size: 1.2em;
-  height: 9em;
+  height: 8em;
   margin: 0.5em 0;
   resize: none;
-  width: 70%;
+  width: 75%;
 }
 
 .Contact_textarea:focus,
@@ -196,12 +209,13 @@
 .Contact_submit_button {
   background-color: transparent;
   border: none;
-  color: #552e5a;
+  color: #ecffa3;
   display: flex;
-  font-size: 1.4em;
-  font-family: "Chakra Petch", sans-serif;
+  font-size: 1.6em;
+  font-family: "DotGothic16", sans-serif;
   font-weight: 400;
-  justify-content: flex-end;
+  justify-content: center;
+  letter-spacing: 0.2em;
   margin: 0.6em;
   max-width: 100%;
   outline: none;
@@ -209,7 +223,7 @@
 
 .Contact_submit_button:hover {
   cursor: pointer;
-  font-style: italic;
+  transform: rotate(-10deg);
 }
 
 @media only screen and (max-width: 900px) {
@@ -229,6 +243,11 @@
 
   .AboutMe {
     padding: 1em;
+  }
+
+  .Modal {
+    display: flex;
+    width: 25em;
   }
 }
 
