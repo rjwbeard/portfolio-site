@@ -6,14 +6,6 @@
   margin: 2vh;
 }
 
-@media only screen and (max-width: 800px) {
-  .App {
-    flex-direction: column-reverse;
-    height: inherit;
-    justify-content: space-between;
-  }
-}
-
 .AboutMe {
   background-color: #ddddc7;
   color: #552e5a;
@@ -22,7 +14,7 @@
   font-size: 3em;
   font-weight: 600px;
   text-align: left;
-  padding: 5em 1em 1em 1em;
+  padding: 4em 1em 1em 1em;
 }
 
 .AboutMe_header {
@@ -33,15 +25,18 @@
 }
 
 .AboutMe_body {
+  display: flex;
+  flex-flow: row wrap;
   font-size: 0.5em;
   line-height: 1.5;
+  padding: 0 0 1em 0;
 }
 
 .Links {
   background-color: #552e5a;
   display: flex;
   flex-direction: column;
-  padding: 1.5em;
+  padding: 2em;
 }
 
 .Links_link {
@@ -64,7 +59,6 @@
   color: #c5d86d;
   cursor: pointer;
 }
-/* #c5d86d #9c7d14 #f0bcd4 #9999c3 #dc6acf #ffc4eb */
 
 #portfolio-link:hover {
   transform: rotate(7deg);
@@ -87,16 +81,16 @@
   -o-transform: rotateZ(7deg);
 }
 
+#twitter-icon {
+  height: 0.6em;
+  width: 0.6em;
+}
+
 #twitter-link:hover {
   transform: rotate(-7deg);
   -moz-transform: rotateZ(-7deg);
   -webkit-transform: rotateZ(-7deg);
   -o-transform: rotateZ(-7deg);
-}
-
-#twitter-icon {
-  height: 0.6em;
-  width: 0.6em;
 }
 
 .Modal {
@@ -134,8 +128,6 @@
   cursor: pointer;
   transform: rotate(-17deg);
 }
-
-/* #0A210F #657153 #285238 */
 
 .Modal_header {
   font-size: 1.7em;
@@ -226,6 +218,16 @@
 }
 
 @media only screen and (max-width: 900px) {
+  .App {
+    flex-direction: column-reverse;
+    height: inherit;
+    justify-content: space-between;
+  }
+
+  .Links {
+    padding: 1em;
+  }
+
   .Contact_input {
     margin: 0.5em;
     height: 2em;
@@ -251,6 +253,12 @@
   .Modal {
     display: flex;
     width: 25em;
+  }
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+  .AboutMe {
+    padding: 3.5em 1em 1em 1em;
   }
 }
 
