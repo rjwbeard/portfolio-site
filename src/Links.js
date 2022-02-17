@@ -25,7 +25,7 @@ const Links = () => {
       </a>
       <Modal />
       <a
-        href="https://twitter.com/mythsabouthell?ref_src=twsrc%5Etfw"
+        href="https://twitter.com/rebecca_codes?ref_src=twsrc%5Etfw"
         className="Links_link"
         data-show-count="false"
         target="_blank"
