@@ -105,7 +105,7 @@
   display: flex;
   flex-direction: column;
   font-family: "Chakra Petch", sans-serif;
-  width: 33em;
+  width: 36em;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -115,7 +115,7 @@
 .Modal_close {
   display: flex;
   width: 100%;
-  height: min-content;
+  height: fit-content;
   justify-content: flex-end;
   transition: 0.2 ease-in-out;
 }
@@ -125,8 +125,8 @@
   border: none;
   color: #ecffa3;
   font-family: "DotGothic16", sans-serif;
-  font-size: 2.5em;
-  height: min-content;
+  font-size: 2.7em;
+  height: fit-content;
   padding: 0 0.5em 0 0;
 }
 
@@ -140,7 +140,7 @@
 .Modal_header {
   font-size: 1.7em;
   justify-content: center;
-  margin: 0.5em 0 1em 0;
+  margin: 0.25em 0 0.75em 0;
   text-align: center;
   width: inherit;
 }
@@ -157,7 +157,6 @@
 
 .Contact {
   display: flex;
-  /* justify-content: center; */
 }
 
 .Contact_form {
@@ -166,12 +165,18 @@
   flex-direction: column;
 }
 
-.Contact_label {
+.Contact_section {
   display: flex;
   flex-flow: row wrap;
-  font-size: 1.2em;
-  justify-content: left;
-  width: 70%;
+  justify-content: center;
+}
+
+.Contact_label {
+  display: flex;
+  font-size: 1.1em;
+  justify-content: flex-start;
+  width: 80%;
+  margin: 0;
 }
 
 .Contact_input {
@@ -180,14 +185,8 @@
   border-radius: 4px;
   font-size: 1.1em;
   height: 2em;
-  margin: 0.5em 0;
-  width: 75%;
-}
-
-.Contact_section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+  margin: 0.2em 0 0.8em 0;
+  width: 80%;
 }
 
 .Contact_textarea {
@@ -196,9 +195,9 @@
   border-radius: 4px;
   font-size: 1.2em;
   height: 8em;
-  margin: 0.5em 0;
+  margin: 0.2em 0 0.8em 0;
   resize: none;
-  width: 75%;
+  width: 80%;
 }
 
 .Contact_textarea:focus,
@@ -238,6 +237,10 @@
     font-size: 1em;
     height: 9em;
     margin: 0.5em;
+    width: 90%;
+  }
+
+  .Contact_label {
     width: 90%;
   }
 
