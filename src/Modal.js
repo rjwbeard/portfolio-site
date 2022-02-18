@@ -28,7 +28,7 @@ const Modal = () => {
           </div>
           <div className="Modal_header"> Let's talk about tech, baby. </div>
           <div className="Modal_content">
-            <Contact />
+            <Contact close={close} />
           </div>
         </div>
       )}
