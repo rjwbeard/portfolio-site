@@ -26,7 +26,7 @@ const Modal = () => {
               &times;
             </button>
           </div>
-          <div className="Modal_header"> Let's talk about tech, baby. </div>
+          <div className="Modal_header">{Content.Contact.modalHeader}</div>
           <div className="Modal_content">
             <Contact close={close} />
           </div>

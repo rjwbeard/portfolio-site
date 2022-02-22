@@ -1,5 +1,6 @@
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Content from "./content.json";
 
 export const Contact = ({ close }) => {
   const form = useRef();
@@ -30,7 +31,9 @@ export const Contact = ({ close }) => {
     <div className="Contact">
       <form className="Contact_form" ref={form} onSubmit={sendEmail}>
         <div className="Contact_section">
-          <label className="Contact_label">Your Name</label>
+          <label className="Contact_label">
+            {Content.Contact.contactNameLabel}
+          </label>
           <input
             className="Contact_input"
             type="text"
@@ -40,7 +43,9 @@ export const Contact = ({ close }) => {
           />
         </div>
         <div className="Contact_section">
-          <label className="Contact_label">Your Email</label>
+          <label className="Contact_label">
+            {Content.Contact.contactEmailLabel}
+          </label>
           <input
             className="Contact_input"
             type="email"
@@ -50,7 +55,9 @@ export const Contact = ({ close }) => {
           />
         </div>
         <div className="Contact_section">
-          <label className="Contact_label">The Message</label>
+          <label className="Contact_label">
+            {Content.Contact.contactMessageLabel}
+          </label>
           <textarea required className="Contact_textarea" name="message" />
         </div>
         <input className="Contact_submit_button" type="submit" value="Send" />
